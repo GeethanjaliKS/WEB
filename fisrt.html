@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+  function fib(){
+    var n=parseInt(prompt(`Enter a number`));
+    var res=1;
+    var pprev=1;
+    var prev=0;
+    document.write("The fibonacci series is :");
+    if(n>=1)
+    document.write(" 0 1 ");
+    for(var i=0;i<n-2;i++){
+        pprev=res;
+        res=prev+pprev;
+        prev=pprev;
+        document.write(res +" ");
+    }
+
+}
+
+function square(){
+    //Square of a number
+var n=parseInt(prompt(`Enter a number`));
+var sq;
+var t=""
+    for(var i=1;i<=n;i++){
+        t=t +"|" +i;
+        sq=i*i;
+        t=t +"|" +sq +"|\n"
+    }
+alert(t);
+}
+    </script>
+</head>
+<body>
+    <h1 onclick={square()}>Square </h1>
+    <h1 onclick={fib()}> Fibonacci </h1>
+    
+</body>
+
+
+</html>
